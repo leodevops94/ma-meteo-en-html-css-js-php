@@ -1,6 +1,6 @@
 [![Open in Coder](https://coder.dafonsecaesteves.fr/open-in-coder.svg)](https://coder.dafonsecaesteves.fr/workspaces)
 
-# Ma Météo en HTML CSS JS PHP 🌦️
+# Ma Météo en HTML CSS JS 🌦️
 
 ## Description
 
@@ -18,7 +18,6 @@ Apprendre les technologies suivantes :
 
 - HTML et CSS pour la structure et le design du site.
 - JavaScript pour ajouter des fonctionnalités dynamiques.
-- PHP pour créer un serveur backend.
 - Utilisation d'API (OpenWeatherMap) pour récupérer des données météo.
 - Testing pour s'assurer de la qualité du site.
 
@@ -34,13 +33,10 @@ Apprendre les technologies suivantes :
 - Ajout de fonctionnalités interactives avec JavaScript.
 - Récupération des données météo via l'API OpenWeatherMap.
 
-#### Phase 3 : Conception d'un Serveur PHP pour Rendre le Site Accessible
 
-- Configuration d'un serveur PHP local pour héberger le site.
+#### Phase 4 : Dynamisation du Site avec Requêtes au Serveur 
 
-#### Phase 4 : Dynamisation du Site avec Requêtes au Serveur PHP
-
-- Déplacement de la logique de traitement des données sur le serveur PHP.
+- Déplacement de la logique de traitement des données sur le serveur.
 - Traitement des données API via PHP avant de les envoyer au frontend.
 
 #### Phase 5 : Création de Tests Fonctionnels et Utilisateurs
