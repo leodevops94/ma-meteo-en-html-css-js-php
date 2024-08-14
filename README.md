@@ -1,4 +1,4 @@
-[![Open in Coder](https://coder.dafonsecaesteves.fr/open-in-coder.svg)](https://coder.dafonsecaesteves.fr/workspace)
+[![Open in Coder](https://coder.dafonsecaesteves.fr/open-in-coder.svg)](https://coder.dafonsecaesteves.fr/workspaces)
 
 # Ma Météo en HTML CSS JS PHP 🌦️
 
