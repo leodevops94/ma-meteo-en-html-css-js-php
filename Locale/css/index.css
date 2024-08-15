@@ -1,0 +1,87 @@
+H1{
+    position: static;
+    font: gras 1.2rem "Roboto", sans-serif;
+    text-align: center;
+    top: 20px;
+    block-size: auto;
+    padding: 32px;
+    color: dodgerblue;
+}
+
+
+.styled2{
+    position: left;
+    font: 1.2rem "Roboto", sans-serif;
+    border: 2;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #393737;
+    border-radius: 10px;
+}
+
+.styled1 {
+    position: right;
+    font: 1.2rem "Roboto", sans-serif;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(9, 110, 235);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    object-fit: contain;
+  }
+  
+.styled1:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+
+
+
+.Rechercherlameteo{
+  position: absolute;
+  height: 280px;
+  width: 1500px;
+  border: 2px solid rgb(140 140 140);
+  font:
+    16px "Open Sans",
+    Helvetica,
+    Arial,
+    sans-serif;
+  object-fit: scale-down;
+}
+
+.ImagePresentation{
+  table-layout: fixed;
+  width: 80%;
+}
+
+.TH1{
+  height: 40px;
+  font: 1.2rem "Roboto", sans-serif;
+}
+
+.TH2{
+  width: 80px;
+  font: 1.2rem "Roboto", sans-serif;
+}
+
+.td{
+  text-align: center;
+  font: 1.2rem "Roboto", sans-serif;
+}
+
+.p{
+  font: Gras 1.2rem "Roboto", sans-serif;
+
+}

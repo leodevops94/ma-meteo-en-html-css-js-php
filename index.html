@@ -2,9 +2,60 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <link  href="./Locale/css/index.css" rel="stylesheet" type="text/css">
+      <title>Bienvenue sur le meilleur site météo du monde</title>
+      
 </head>
 <body>
+     
+      <colgroup>
+            <col span="12"/>
+      </colgroup>
       
+      <head>
+            <Div>
+            <H1>Bienvenue sur le meilleur site météo du monde</H1>
+            </Div>
+<!--L'idée c'est de vérifier suivant une liste défini (code postal et/ou une villes) avant de lancer la requeête --> 
+           <table class="zoneDeRecherche">
+                  <form action="https://openweathermap.org/" method="get">
+                        <tr class="recherche1">
+                              <th ><input class="styled2" id="villeRecherche" name="villeRecherche"></th>
+                              <th ><button popovertaget="villeRecherche" class="styled1" type="submit" formtarget="tableau1">Rechercher votre bonheur</button></th>
+                        </tr>
+                  </form>
+            </table>
+
+      </head>
+      
+      <main>
+
+            <table class="Rechercherlameteo" id="tableau1">
+      
+                        <tr>
+                              <th> </th>
+                              <th class="TH1">Ville recherché</th>
+                              <th class="TH1">Département</th>
+                        </tr>
+                        <tr>
+                              <th class="TH2">Trouvé</th>
+                              <td>xxx</td>
+                              <td>xxx</td>
+                        </tr>    
+
+            </table>
+
+            <table>
+                  <tr>
+                        <th><img class="ImagePresentation" src="./Locale/log/Image-1-Présentation.png" alt="Image de présentation"></th>
+                  </tr>
+            </table>
+
+      </main>
+      <Footer>
+            <p style="text-align: center;"><strong>Ce site web est privé et faites attention vous êtes suivi</strong></p>
+
+      </Footer>
+     
 </body>
 </html>
