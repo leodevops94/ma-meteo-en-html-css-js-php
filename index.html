@@ -7,53 +7,96 @@
       
 </head>
 <body>
-     
+     <style>body{background-color: hwb(214 0% 0%);}</style>
       <colgroup>
             <col span="12"/>
       </colgroup>
       
       <head>
-            <Div>
-            <H1>Bienvenue sur le meilleur site météo du monde</H1>
-            </Div>
-<!--L'idée c'est de vérifier suivant une liste défini (code postal et/ou une villes) avant de lancer la requeête --> 
-           <table class="zoneDeRecherche">
-                  <form action="https://openweathermap.org/" method="get">
-                        <tr class="recherche1">
-                              <th ><input class="styled2" id="villeRecherche" name="villeRecherche"></th>
-                              <th ><button popovertaget="villeRecherche" class="styled1" type="submit" formtarget="tableau1">Rechercher votre bonheur</button></th>
-                        </tr>
-                  </form>
-            </table>
+            <div id="MenuDeNavigation"></div>
+                        <ul class="Navigation1">
+                              <li class="LogoDuSite">
+                                    <a href="./index.html">
+                                          <img src="./Locale/log/a075e288-f8b4-4d02-9b25-be2d84204c6f.webp" height="60px" alt="Notre logo">
+                                    </a>
+                              </li>
+                              <li class="IconeHamburger">
+                                    <img src="./Locale/log/icon_hamburger.svg" alt="Menu Déroulant">
+                              </li>
+                              <li id="CreerUneAlerte" href="">Céer une alerte</li>
+                              <li id="CreerUnCompte" href="">S'abonner</li>
+                        </ul>
+                 
+            </div>
 
+            <div id="NomDuSite">
+            <H1>Bienvenue sur le meilleur site météo du monde</H1>
+            </div>
+           
       </head>
       
       <main>
+ <!--L'idée c'est de vérifier suivant une liste défini (code postal et/ou une villes) avant de lancer la requeête -->
+            <nav class="ZoneDeRecherche">
+                  <form action="https://openweathermap.org" method="get">
+                        <ul class="Recherche1">
+                              <input class="site1" id="VilleRecherche1" name="VilleDeRecherche">
+                              <button popovertaget="VilleRecherche" class="styled1" type="submit" formtarget="tableau1" value="">Rechercher</button>
+                        </ul>
+                  </form>
+            </nav>
 
-            <table class="Rechercherlameteo" id="tableau1">
-      
-                        <tr>
-                              <th> </th>
-                              <th class="TH1">Ville recherché</th>
-                              <th class="TH1">Département</th>
-                        </tr>
-                        <tr>
-                              <th class="TH2">Trouvé</th>
-                              <td>xxx</td>
-                              <td>xxx</td>
-                        </tr>    
+            <ul>
+                  <li><button popovertaget="Maintenant" class="styled2" type="submit" formtarget_bank="" value="">Maintenant</button></li>
+                  <li><button popovertaget="Aujourd'hui" class="styled2" type="submit" formtarget_bank="" value="">Aujourd'hui</button></li>
+                  <li><button popovertaget="Cette Semaine" class="styled2" type="submit" formtarget_bank="" value="">Cette Semaine</button></li>
 
-            </table>
+            </ul>
 
-            <table>
-                  <tr>
-                        <th><img class="ImagePresentation" src="./Locale/log/Image-1-Présentation.png" alt="Image de présentation"></th>
-                  </tr>
-            </table>
+            <div id="Resultat">
+                  <div id="VilleRecherche">
+                        <h2>Ville recherché</h2>
+                        <!--afficher ici la météo de la ville (Temp/vent/température/UV)-->
+                        <div id="VilleRecherche2">
+                              <div id="Temp">
+                                    <div><p>Temp</p></div>
+                                    <img src="./Locale/log/Soleiletnuage.jpg" height="100" alt="Temp">
+                              </div>
+                              <div id="Temperature">
+                                    <div><p>Température</p></div>
+                                    <img src="./Locale/log/icône-de-la-température.webp" height="100" alt="Température">
+                              </div>
+                              <div id="Vent">
+                                    <div><p>Vent</p></div>
+                                    <img src="./Locale/log/icone-de-vent-de-vecteur-gratuit-vectoriel.jpg" height="100" alt="Vent">
+                              </div>
+                              <div id="UV">
+                                    <div><p>UV</p></div>
+                                    <img src="./Locale/log/UV.jpg" height="100"  alt="UV">
+                              </div>
+                        </div>
+                  </div>
+                  <div id="Region">
+                        <h2>Carte Région</h2>
+                        <!--afficher ici la météo de la ville (Temp/vent/température)-->
+                        <div>
+                              <div id="CarteRegion">
+                                    <img src="./Locale/log/ExempleCarteFrance.png" height="80%" alt="Carte de région">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="ImagePresentation">
+                  <img  src="./Locale/log/Image-1-Présentation.png" height="200" alt="Image de présentation">
+
+            </div>
 
       </main>
       <Footer>
-            <p style="text-align: center;"><strong>Ce site web est privé et faites attention vous êtes suivi</strong></p>
+            <div id="TexteDeFin">
+                  <p style="text-align: center;"><strong>Ce site web est privé et faites attention vous êtes suivi</strong></p>
+            </div>
 
       </Footer>
      

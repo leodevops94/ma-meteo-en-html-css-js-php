@@ -1,4 +1,9 @@
-H1{
+.body{
+  background-color: steelblue;
+}
+
+
+h1{
     position: static;
     font: gras 1.2rem "Roboto", sans-serif;
     text-align: center;
@@ -8,20 +13,7 @@ H1{
     color: dodgerblue;
 }
 
-
-.styled2{
-    position: left;
-    font: 1.2rem "Roboto", sans-serif;
-    border: 2;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    text-shadow: 2px 2px 2px #393737;
-    border-radius: 10px;
-}
-
-.styled1 {
+.Styled1 {
     position: right;
     font: 1.2rem "Roboto", sans-serif;
     border: 0;
@@ -39,16 +31,38 @@ H1{
     object-fit: contain;
   }
   
-.styled1:active {
+.Styled1:active {
     box-shadow:
       inset -2px -2px 3px rgba(255, 255, 255, 0.6),
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
 
+.Styled2{
+  width: 100%;
+  position: right;
+  font: 1.2rem "Roboto", sans-serif;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(9, 110, 235);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+}
 
+.Styled2:active{
+  box-shadow:
+  inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
 
-
-.Rechercherlameteo{
+.RechercherLaMeteo{
   position: absolute;
   height: 280px;
   width: 1500px;
@@ -61,27 +75,92 @@ H1{
   object-fit: scale-down;
 }
 
-.ImagePresentation{
-  table-layout: fixed;
-  width: 80%;
-}
 
-.TH1{
-  height: 40px;
-  font: 1.2rem "Roboto", sans-serif;
-}
 
-.TH2{
-  width: 80px;
-  font: 1.2rem "Roboto", sans-serif;
-}
-
-.td{
-  text-align: center;
-  font: 1.2rem "Roboto", sans-serif;
-}
 
 .p{
   font: Gras 1.2rem "Roboto", sans-serif;
 
+}
+
+.Navigation1{
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: dodgerblue;
+}
+
+ul{
+  width: 100%;
+  height: 70px;
+  list-style-type: none;
+  font-size: 0;
+  text-align: center;
+  align-items: center;
+}
+
+ul li{
+  text-align: center;
+  display: inline-block;
+  width: calc(100% / 4);
+  font-size: 14px;
+}
+
+
+.ZoneDeRecherche{
+  position: relative;
+  height: auto;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  font-family: "ROBOTO", sans-serif, ;
+}
+
+#Resultat{
+  width: 100%;
+  height: 400px;
+
+}
+
+#VilleRecherche{
+  outline: solid#fff;
+  text-align: center;
+  width: calc(100% / 2);
+  height: 400px;
+  float: inline-start;
+  background-color: dodgerblue;
+}
+
+#Region{
+  outline: solid#fff;
+  text-align: center;
+  width: calc(100% / 2);
+  height: 400px;
+  float: inline-start;
+  background-color: dodgerblue;
+}
+
+
+#VilleRecherche2{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#ImagePresentation{
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#TexteDeFin{
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  justify-content: space-between;
 }
