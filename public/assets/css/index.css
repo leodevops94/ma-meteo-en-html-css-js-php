@@ -1,166 +1,90 @@
-.body{
-  background-color: steelblue;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
-h1{
-    position: static;
-    font: gras 1.2rem "Roboto", sans-serif;
-    text-align: center;
-    top: 20px;
-    block-size: auto;
-    padding: 32px;
-    color: dodgerblue;
-}
-
-.Styled1 {
-    position: right;
-    font: 1.2rem "Roboto", sans-serif;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(9, 110, 235);
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-    object-fit: contain;
-  }
-  
-.Styled1:active {
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
-
-.Styled2{
-  width: 100%;
-  position: right;
-  font: 1.2rem "Roboto", sans-serif;
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color: rgb(9, 110, 235);
-  box-shadow:
-    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  object-fit: contain;
-}
-
-.Styled2:active{
-  box-shadow:
-  inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-  inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.RechercherLaMeteo{
-  position: absolute;
-  height: 280px;
-  width: 1500px;
-  border: 2px solid rgb(140 140 140);
-  font:
-    16px "Open Sans",
-    Helvetica,
-    Arial,
-    sans-serif;
-  object-fit: scale-down;
-}
-
-
-
-
-.p{
-  font: Gras 1.2rem "Roboto", sans-serif;
-
-}
-
-.Navigation1{
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: dodgerblue;
-}
-
-ul{
-  width: 100%;
-  height: 70px;
-  list-style-type: none;
-  font-size: 0;
-  text-align: center;
-  align-items: center;
-}
-
-ul li{
-  text-align: center;
-  display: inline-block;
-  width: calc(100% / 4);
-  font-size: 14px;
-}
-
-
-.ZoneDeRecherche{
-  position: relative;
-  height: auto;
-  top: 0;
-  width: 100%;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f5;
+  padding: 0 20px;
+}
+
+::selection {
+  color: #fff;
+  background: #664AFF;
+}
+
+.container {
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.container .searchInput {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.searchInput input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.searchInput .resultBox {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.searchInput.active .resultBox {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.resultBox li {
   list-style: none;
-  font-family: "ROBOTO", sans-serif, ;
-}
-
-#Resultat{
+  padding: 8px 12px;
+  display: none;
   width: 100%;
-  height: 400px;
-
+  cursor: default;
+  border-radius: 3px;
 }
 
-#VilleRecherche{
-  outline: solid#fff;
+.searchInput.active .resultBox li {
+  display: block;
+}
+
+.resultBox li:hover {
+  background: #efefef;
+}
+
+.searchInput .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
   text-align: center;
-  width: calc(100% / 2);
-  height: 400px;
-  float: inline-start;
-  background-color: dodgerblue;
-}
-
-#Region{
-  outline: solid#fff;
-  text-align: center;
-  width: calc(100% / 2);
-  height: 400px;
-  float: inline-start;
-  background-color: dodgerblue;
-}
-
-
-#VilleRecherche2{
-  display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-#ImagePresentation{
-  align-items: center;
-  height: 30px;
-  width: 100%;
-  text-align: center;
-  justify-content: space-between;
-}
-
-#TexteDeFin{
-  align-items: center;
-  height: 30px;
-  text-align: center;
-  justify-content: space-between;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
 }
